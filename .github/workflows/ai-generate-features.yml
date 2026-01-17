@@ -1,0 +1,76 @@
+name: "AI: generate/update feature specs"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 0'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up PHP (Laravel repo)
+        uses: shivammathur/setup-php@v4
+        with:
+          php-version: '8.1'
+          extensions: mbstring, xml, gd
+
+      - name: Install dependencies (if needed)
+        run: |
+          if [ -f composer.json ]; then
+            composer install --no-interaction --no-plugins --no-scripts --prefer-dist
+          fi
+          if [ -f package.json ]; then
+            npm ci || true
+          fi
+
+      - name: Run scanner to collect routes/tests
+        run: |
+          mkdir -p tmp
+          chmod +x scripts/extract-features.sh || true
+          ./scripts/extract-features.sh tmp || true
+        working-directory: ${{ github.workspace }}
+
+      - name: Run AI orchestrator (generate specs)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          chmod +x scripts/ai-orchestrator.sh || true
+          ./scripts/ai-orchestrator.sh tmp specs || true
+        working-directory: ${{ github.workspace }}
+
+      - name: Commit generated specs and create branch
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BRANCH="ai/feature-specs-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH"
+          git add specs docs || true
+          if ! git diff --staged --quiet; then
+            git commit -m "AGENT: auto-generate feature specs"
+            git push -u origin "$BRANCH"
+            if command -v gh >/dev/null 2>&1; then
+              gh auth setup-git || true
+              gh pr create --title "AI: generated feature specs" --body "Auto-generated specs. Please review." --base main --head "$BRANCH"
+            else
+              curl -s -X POST -H "Authorization: token ${GH_TOKEN}" \
+                -H "Accept: application/vnd.github.v3+json" \
+                https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls \
+                -d "$(jq -n --arg head "$BRANCH" --arg base "main" --arg title "AI: generated feature specs" --arg body "Auto-generated specs. Please review." '{head:$head, base:$base, title:$title, body:$body}')" || true
+            fi
+          else
+            echo "No changes to commit."
+          fi
+
+      - name: Notify (optional)
+        if: always()
+        run: |
+          echo "Workflow completed. Check PRs or specs/ directory."

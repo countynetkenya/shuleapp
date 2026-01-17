@@ -8,3 +8,6 @@
 
 # Devcontainer logs
 .devcontainer/logs/
+
+# Temporary AI feature extraction output
+/tmp/
