@@ -8,3 +8,6 @@
 
 # Devcontainer logs
 .devcontainer/logs/
+
+# AI workflow temporary files
+/tmp/
