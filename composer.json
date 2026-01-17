@@ -1,0 +1,15 @@
+{
+	"require": {
+		"league/omnipay": "^3.2",
+		"omnipay/paypal": "^3.0",
+		"omnipay/stripe": "^3.1",
+		"mpdf/mpdf": "8.2.5",
+		"phpoffice/phpspreadsheet": "^1.21",
+		"aferrandini/phpqrcode": "^1.0",
+		"quickbooks/v3-php-sdk": "^6.1",
+		"ircmaxell/random-lib": "^1.2",
+		"zircote/swagger-php": "^5.1",
+		"doctrine/annotations": "^2.0",
+		"mike42/escpos-php": "^4.0"
+	}
+}

@@ -1,0 +1,7 @@
+*/config/development
+*/logs/*
+*/logs/!index.html
+*/cache/*
+*/cache/!index.html
+/uploads/
+/vendor/
