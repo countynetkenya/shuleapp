@@ -5,3 +5,6 @@
 */cache/!index.html
 /uploads/
 /vendor/
+
+# Devcontainer logs
+.devcontainer/logs/
