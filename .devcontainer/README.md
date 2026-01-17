@@ -28,6 +28,7 @@ The dev environment provides a complete LEMP stack (Linux, Nginx, MariaDB, PHP) 
 - Port: 80
 - Root: `/workspaces/shuleapp`
 - PHP extensions: pdo_mysql, mysqli, mbstring, zip, gd, xml, opcache, redis
+- **Note**: For simplicity in Codespaces, PHP-FPM and Nginx run in a single container. In production, these should be separate containers for better maintainability.
 
 ### MariaDB
 - Port: 3306

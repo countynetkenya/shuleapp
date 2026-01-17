@@ -62,7 +62,8 @@ jobs:
             exit 0
           fi
           
-          DIAGNOSTICS_CONTENT=$(cat "$DIAGNOSTICS_FILE")
+          # Escape content properly for JSON using jq
+          DIAGNOSTICS_CONTENT=$(cat "$DIAGNOSTICS_FILE" | jq -Rs .)
           
           # Call OpenAI API for analysis
           RESPONSE=$(curl -s -X POST https://api.openai.com/v1/chat/completions \
@@ -77,7 +78,7 @@ jobs:
                 },
                 {
                   "role": "user",
-                  "content": "Analyze this diagnostics report and identify any critical issues:\n\n'"${DIAGNOSTICS_CONTENT//\"/\\\"}"'"
+                  "content": "Analyze this diagnostics report and identify any critical issues:\n\n'"${DIAGNOSTICS_CONTENT}"'"
                 }
               ],
               "temperature": 0.3
@@ -89,10 +90,12 @@ jobs:
           # Save analysis to file
           echo "$AI_ANALYSIS" > .devcontainer/logs/ai-analysis-${{ github.run_number }}.txt
           
-          # Set output for issue creation
-          echo "analysis<<EOF" >> $GITHUB_OUTPUT
-          echo "$AI_ANALYSIS" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          # Set output for issue creation using proper multiline format
+          {
+            echo "analysis<<EOF"
+            echo "$AI_ANALYSIS"
+            echo "EOF"
+          } >> $GITHUB_OUTPUT
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 

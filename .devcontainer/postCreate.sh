@@ -56,7 +56,8 @@ fi
 chmod -R 777 mvc/uploads 2>/dev/null || true
 chmod -R 777 mvc/cache 2>/dev/null || true
 chmod -R 777 mvc/logs 2>/dev/null || true
-chmod -R 777 mvc/config 2>/dev/null || true
+# Config directory gets more restrictive permissions (755)
+chmod -R 755 mvc/config 2>/dev/null || true
 
 echo "Permissions set successfully"
 

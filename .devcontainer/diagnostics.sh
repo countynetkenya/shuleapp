@@ -30,11 +30,16 @@ php -m
 echo ""
 
 echo "=== COMPOSER VERSION ==="
-composer --version 2>/dev/null || echo "Composer not installed"
+composer --version 2>/dev/null || echo "Composer not found in PATH"
 echo ""
 
 echo "=== NGINX STATUS ==="
-nginx -v 2>&1 || echo "Nginx not running/installed"
+if command -v nginx &> /dev/null; then
+    nginx -v 2>&1
+    nginx -t 2>&1 || echo "Nginx configuration test failed"
+else
+    echo "Nginx binary not found"
+fi
 echo ""
 
 echo "=== CONFIGURATION CHECKS ==="
@@ -112,7 +117,7 @@ echo ""
 echo "=== DIRECTORY PERMISSIONS ==="
 for dir in mvc/uploads mvc/cache mvc/logs mvc/config; do
     if [ -d "$dir" ]; then
-        PERMS=$(stat -c "%a" "$dir" 2>/dev/null || stat -f "%OLp" "$dir" 2>/dev/null || echo "unknown")
+        PERMS=$(ls -ld "$dir" | awk '{print $1}')
         echo "$dir: $PERMS"
     else
         echo "$dir: NOT FOUND"
