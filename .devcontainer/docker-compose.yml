@@ -20,6 +20,7 @@ services:
   mariadb:
     image: mariadb:10.6
     environment:
+      # DEVELOPMENT ONLY - Do not use these credentials in production!
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: shule
       MYSQL_USER: shule

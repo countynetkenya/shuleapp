@@ -52,11 +52,13 @@ if [ ! -d "mvc/logs" ]; then
     echo "Created mvc/logs directory"
 fi
 
-# Set permissions (777 for development environment only)
+# Set permissions (777 for development environment only - NOT for production!)
+# These directories need write access for the web server and development
+# uploads, cache, and logs need full permissions for file operations
 chmod -R 777 mvc/uploads 2>/dev/null || true
 chmod -R 777 mvc/cache 2>/dev/null || true
 chmod -R 777 mvc/logs 2>/dev/null || true
-# Config directory gets more restrictive permissions (755)
+# Config directory gets more restrictive permissions (755) for better security
 chmod -R 755 mvc/config 2>/dev/null || true
 
 echo "Permissions set successfully"

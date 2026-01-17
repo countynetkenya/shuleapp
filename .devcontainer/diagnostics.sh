@@ -82,19 +82,19 @@ if command -v redis-cli &> /dev/null; then
     fi
 else
     echo "Redis CLI not installed, trying PHP extension..."
-    php -r "
-    if (extension_loaded('redis')) {
+    timeout 5 php -r '
+    if (extension_loaded("redis")) {
         try {
-            \$redis = new Redis();
-            \$redis->connect('redis', 6379);
-            echo '✓ Redis connection successful via PHP' . PHP_EOL;
-        } catch (Exception \$e) {
-            echo '✗ Redis connection failed: ' . \$e->getMessage() . PHP_EOL;
+            $redis = new Redis();
+            $redis->connect("redis", 6379, 2);  // 2 second timeout
+            echo "✓ Redis connection successful via PHP" . PHP_EOL;
+        } catch (Exception $e) {
+            echo "✗ Redis connection failed: " . $e->getMessage() . PHP_EOL;
         }
     } else {
-        echo 'Redis extension not loaded' . PHP_EOL;
+        echo "Redis extension not loaded" . PHP_EOL;
     }
-    " 2>/dev/null || echo "Redis check failed"
+    ' 2>/dev/null || echo "Redis check timed out or failed"
 fi
 echo ""
 
