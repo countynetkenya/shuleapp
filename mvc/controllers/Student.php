@@ -1054,8 +1054,28 @@ class Student extends Admin_Controller {
 				$this->data['students'] = [];
 			}
 
-			$this->data["authUrl"] = $_SESSION['authUrl'];
 			$this->data['config'] = $this->quickbooksConfig();
+			$config = $this->data['config'];
+
+			if(isset($_SESSION['authUrl'])) {
+				$this->data["authUrl"] = $_SESSION['authUrl'];
+			} else {
+				$this->data["authUrl"] = "";
+				if(isset($config['client_id']) && $config['client_id'] != "" && $config['client_secret'] != "" && ($config['stage'] == "development" || $config['stage'] == "production")) {
+					$dataService = DataService::Configure(array(
+						'auth_mode' => 'oauth2',
+						'ClientID' => $config['client_id'],
+						'ClientSecret' =>  $config['client_secret'],
+						'RedirectURI' => base_url() . "quickbooks/callback",
+						'scope' => 'com.intuit.quickbooks.accounting openid profile email phone address',
+						'baseUrl' => $config['stage']
+					));
+					$OAuth2LoginHelper = $dataService->getOAuth2LoginHelper();
+					$authUrl = $OAuth2LoginHelper->getAuthorizationCodeURL();
+					$_SESSION['authUrl'] = $authUrl;
+					$this->data["authUrl"] = $authUrl;
+				}
+			}
 			//} else {
 			//	$this->data['students'] = [];
 			//}
