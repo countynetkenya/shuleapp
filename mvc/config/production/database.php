@@ -49,11 +49,11 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['dsn']	   = '';
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'kIURA@17463';
-$db['default']['database'] = 'shule';
-$db['default']['dbdriver'] = 'mysqli';
+$db['default']['hostname'] = getenv('DB_HOST') !== false ? getenv('DB_HOST') : 'localhost';
+$db['default']['username'] = getenv('DB_USER') !== false ? getenv('DB_USER') : 'root';
+$db['default']['password'] = getenv('DB_PASS') !== false ? getenv('DB_PASS') : '';
+$db['default']['database'] = getenv('DB_NAME') !== false ? getenv('DB_NAME') : 'shule';
+$db['default']['dbdriver'] = getenv('DB_DRIVER') !== false ? getenv('DB_DRIVER') : 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = FALSE;

@@ -1,6 +1,11 @@
 <?php
 	date_default_timezone_set('Africa/Nairobi');
 
+	// Load environment variables from .env (optional). This populates $_ENV and getenv()
+	if (file_exists(__DIR__ . '/config/bootstrap_env.php')) {
+		require_once __DIR__ . '/config/bootstrap_env.php';
+	}
+
 /**
  * CodeIgniter
  *
