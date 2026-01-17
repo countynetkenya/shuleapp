@@ -23,7 +23,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $_SERVER['HTTP_HOST'] . preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])) . '/';
+// Prefer APP_URL from environment for portability. Fallback to auto-detection for development.
+$env_app_url = getenv('APP_URL');
+if ($env_app_url !== false && $env_app_url !== '') {
+    $config['base_url'] = rtrim($env_app_url, '/') . '/';
+} else {
+    $config['base_url'] = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost') . preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])) . '/';
+}
 
 $config['base_path'] = $_SERVER['DOCUMENT_ROOT'] . preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])) . '/';
 
@@ -327,7 +333,13 @@ $config['cache_query_string'] = FALSE;
 |
 */
 
-$config['encryption_key'] = '8bc8ae426d4354c8df0488e2d7f1a9de';
+$env_key = getenv('ENCRYPTION_KEY');
+// Use environment-provided encryption key; if not present, keep existing value (but rotate for production).
+if ($env_key !== false && $env_key !== '') {
+    $config['encryption_key'] = $env_key;
+} else {
+    $config['encryption_key'] = '8bc8ae426d4354c8df0488e2d7f1a9de';
+}
 
 
 /*
@@ -384,7 +396,7 @@ $config['encryption_key'] = '8bc8ae426d4354c8df0488e2d7f1a9de';
 $config['sess_driver'] = 'database';
 $config['sess_cookie_name'] = 'school';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = 'school_sessions';
+$config['sess_save_path'] = getenv('SESS_SAVE_PATH') !== false ? getenv('SESS_SAVE_PATH') : 'school_sessions';
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
@@ -405,10 +417,10 @@ $config['sess_regenerate_destroy'] = FALSE;
 |
 */
 $config['cookie_prefix']	= '';
-$config['cookie_domain']	= '';
-$config['cookie_path']		= '/';
-$config['cookie_secure']	= FALSE;
-$config['cookie_httponly'] 	= FALSE;
+$config['cookie_domain']	= getenv('COOKIE_DOMAIN') !== false ? getenv('COOKIE_DOMAIN') : '';
+$config['cookie_path']		= getenv('COOKIE_PATH') !== false ? getenv('COOKIE_PATH') : '/';
+$config['cookie_secure']	= (getenv('COOKIE_SECURE') !== false) ? (bool)filter_var(getenv('COOKIE_SECURE'), FILTER_VALIDATE_BOOLEAN) : FALSE;
+$config['cookie_httponly'] 	= (getenv('COOKIE_HTTPONLY') !== false) ? (bool)filter_var(getenv('COOKIE_HTTPONLY'), FILTER_VALIDATE_BOOLEAN) : FALSE;
 
 /*
 |--------------------------------------------------------------------------
