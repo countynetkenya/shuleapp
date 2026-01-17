@@ -169,8 +169,8 @@
 		</div>
 	</div>
 
-	<link href="http://localhost/shule/assets/datepicker/datepicker.css" rel="stylesheet">
-	<script src="http://localhost/shule/assets/datepicker/datepicker.js"></script>
+	<link href="<?=base_url('assets/datepicker/datepicker.css')?>" rel="stylesheet">
+	<script src="<?=base_url('assets/datepicker/datepicker.js')?>"></script>
 	<script language="javascript" type="text/javascript">
 			$(".select2").select2();
 

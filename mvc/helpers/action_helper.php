@@ -1147,10 +1147,10 @@
 
     function callDesignCss()
     {
-        $file  = file_get_contents('http://localhost/school4/assets/bootstrap/bootstrap.min.css');
-        $file2 = file_get_contents('http://localhost/school4/assets/inilabs/themes/default/style.css');
-        $file3 = file_get_contents('http://localhost/school4/assets/inilabs/themes/default/inilabs.css');
-        $file4 = file_get_contents('http://localhost/school4/assets/inilabs/combined.css');
+        $file  = file_get_contents(FCPATH . 'assets/bootstrap/bootstrap.min.css');
+        $file2 = file_get_contents(FCPATH . 'assets/inilabs/themes/default/style.css');
+        $file3 = file_get_contents(FCPATH . 'assets/inilabs/themes/default/inilabs.css');
+        $file4 = file_get_contents(FCPATH . 'assets/inilabs/combined.css');
         echo '<style type="text/css">' . $file . $file2 . $file3 . $file4 . '</style>';
     }
 
