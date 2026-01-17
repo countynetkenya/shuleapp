@@ -1,0 +1,134 @@
+name: AI-Powered Diagnostics
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  diagnostics:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: pdo_mysql, mysqli, mbstring, zip, gd, xml, opcache, redis
+
+      - name: Install dependencies
+        run: |
+          if [ -f composer.json ]; then
+            composer install --no-interaction --prefer-dist --no-dev
+          fi
+
+      - name: Run diagnostics script
+        id: diagnostics
+        run: |
+          chmod +x .devcontainer/diagnostics.sh
+          bash .devcontainer/diagnostics.sh
+          
+          # Capture the latest log file
+          LATEST_LOG=$(ls -t .devcontainer/logs/diagnostics-*.txt | head -1)
+          echo "log_file=$LATEST_LOG" >> $GITHUB_OUTPUT
+          
+          # Store diagnostics content for potential AI analysis
+          if [ -f "$LATEST_LOG" ]; then
+            echo "DIAGNOSTICS_CONTENT<<EOF" >> $GITHUB_ENV
+            cat "$LATEST_LOG" >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+          fi
+
+      - name: Upload diagnostics artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostics-report-${{ github.run_number }}
+          path: .devcontainer/logs/diagnostics-*.txt
+          retention-days: 30
+
+      - name: AI-Powered Analysis (if API key available)
+        if: ${{ secrets.OPENAI_API_KEY != '' }}
+        id: ai_analysis
+        run: |
+          # Prepare diagnostics content
+          DIAGNOSTICS_FILE="${{ steps.diagnostics.outputs.log_file }}"
+          
+          if [ ! -f "$DIAGNOSTICS_FILE" ]; then
+            echo "Diagnostics file not found"
+            exit 0
+          fi
+          
+          DIAGNOSTICS_CONTENT=$(cat "$DIAGNOSTICS_FILE")
+          
+          # Call OpenAI API for analysis
+          RESPONSE=$(curl -s -X POST https://api.openai.com/v1/chat/completions \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${{ secrets.OPENAI_API_KEY }}" \
+            -d '{
+              "model": "gpt-4",
+              "messages": [
+                {
+                  "role": "system",
+                  "content": "You are a DevOps expert analyzing CodeIgniter application diagnostics. Identify critical issues, configuration problems, and provide actionable recommendations."
+                },
+                {
+                  "role": "user",
+                  "content": "Analyze this diagnostics report and identify any critical issues:\n\n'"${DIAGNOSTICS_CONTENT//\"/\\\"}"'"
+                }
+              ],
+              "temperature": 0.3
+            }')
+          
+          # Extract AI analysis from response
+          AI_ANALYSIS=$(echo "$RESPONSE" | jq -r '.choices[0].message.content' 2>/dev/null || echo "Failed to parse AI response")
+          
+          # Save analysis to file
+          echo "$AI_ANALYSIS" > .devcontainer/logs/ai-analysis-${{ github.run_number }}.txt
+          
+          # Set output for issue creation
+          echo "analysis<<EOF" >> $GITHUB_OUTPUT
+          echo "$AI_ANALYSIS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Create Issue for Critical Findings
+        if: ${{ secrets.OPENAI_API_KEY != '' && steps.ai_analysis.outputs.analysis != '' }}
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const analysis = `${{ steps.ai_analysis.outputs.analysis }}`;
+            
+            // Only create issue if critical issues are detected
+            if (analysis.toLowerCase().includes('critical') || 
+                analysis.toLowerCase().includes('error') || 
+                analysis.toLowerCase().includes('failed')) {
+              
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `🤖 AI Diagnostics Alert - ${new Date().toISOString().split('T')[0]}`,
+                body: `## AI-Powered Diagnostics Analysis
+            
+            **Run:** #${{ github.run_number }}
+            **Date:** ${new Date().toISOString()}
+            
+            ### Analysis
+            
+            ${analysis}
+            
+            ### Full Diagnostics
+            
+            See the [diagnostics artifact](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) for complete details.
+            
+            ---
+            *This issue was automatically created by the AI Diagnostics workflow.*
+            `,
+                labels: ['diagnostics', 'automated', 'ai-analysis']
+              });
+            }

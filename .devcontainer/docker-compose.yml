@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  workspace:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ..:/workspaces/shuleapp:cached
+    depends_on:
+      - mariadb
+      - redis
+      - mailhog
+    command: sh -c "php-fpm & nginx -g 'daemon off;'"
+    networks:
+      - devcontainer
+
+  mariadb:
+    image: mariadb:10.6
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: shule
+      MYSQL_USER: shule
+      MYSQL_PASSWORD: shule
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    networks:
+      - devcontainer
+
+  redis:
+    image: redis:alpine
+    networks:
+      - devcontainer
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+    networks:
+      - devcontainer
+
+volumes:
+  mariadb-data:
+
+networks:
+  devcontainer:
