@@ -53,7 +53,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           BRANCH="ai/feature-specs-$(date +%Y%m%d-%H%M%S)"
           git checkout -b "$BRANCH"
-          git add specs docs || true
+          git add specs || true
+          [ -d docs ] && git add docs || true
           if ! git diff --staged --quiet; then
             git commit -m "AGENT: auto-generate feature specs"
             git push -u origin "$BRANCH"
