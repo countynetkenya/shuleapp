@@ -429,3 +429,7 @@ nav h2 {
 .navbar .navbar-right > .nav {
   margin-right: 0px !important;
 }
+/* GLOBAL FIX: Add default border to .box */
+.box {
+    border-top: 3px solid #d2d6de;
+}

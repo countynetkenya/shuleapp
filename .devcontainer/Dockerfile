@@ -10,7 +10,9 @@ RUN apt-get update && apt-get install -y \
     libonig-dev \
     libxml2-dev \
     curl \
+    mariadb-client \
     && rm -rf /var/lib/apt/lists/*
+
 
 # Install PHP extensions
 RUN docker-php-ext-install pdo_mysql mysqli mbstring zip gd xml opcache

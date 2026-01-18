@@ -423,5 +423,16 @@
               }, 5000);
             });
         </script>
+        <script>
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function() {
+                navigator.serviceWorker.register('<?=base_url("sw.js")?>').then(function(registration) {
+                  console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                  console.log('ServiceWorker registration failed: ', err);
+                });
+              });
+            }
+        </script>
     </body>
 </html>

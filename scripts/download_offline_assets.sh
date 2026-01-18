@@ -49,4 +49,23 @@ curl -L -o assets/vendor/google-fonts/michroma-v7-woff2.woff2 "https://fonts.gst
 # Prosto One
 curl -L -o assets/vendor/google-fonts/prostoone-v5-woff2.woff2 "https://fonts.gstatic.com/s/prostoone/v5/mTFYjVXEgUAP8V1WIJc9cCEAvth_LlrfE80CYdSH47w.woff2"
 
+# Create Highcharts directory
+mkdir -p assets/vendor/highcharts
+mkdir -p assets/vendor/highcharts/modules
+
+# Download Highcharts (Latest stable)
+echo "Downloading Highcharts..."
+curl -L -o assets/vendor/highcharts/highcharts.js "https://code.highcharts.com/highcharts.js"
+curl -L -o assets/vendor/highcharts/modules/exporting.js "https://code.highcharts.com/modules/exporting.js"
+curl -L -o assets/vendor/highcharts/modules/export-data.js "https://code.highcharts.com/modules/export-data.js"
+curl -L -o assets/vendor/highcharts/modules/accessibility.js "https://code.highcharts.com/modules/accessibility.js"
+
+# Download Country List
+mkdir -p assets/vendor/country-list
+curl -L -o assets/vendor/country-list/country-list.js "https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag@latest/dist/main.js"
+
+
+
 echo "Download complete."
+
+

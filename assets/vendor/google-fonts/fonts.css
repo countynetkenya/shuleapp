@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Great Vibes'), local('GreatVibes-Regular'), url('greatvibes-v4-woff2.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Allerta Stencil';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Allerta Stencil'), local('AllertaStencil-Regular'), url('allertastencil-v7-woff2.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fira Sans Extra Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans Extra Condensed Regular'), local('FiraSansExtraCondensed-Regular'), url('firasansextracondensed-v1-woff2.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Limelight';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Limelight'), local('Limelight-Regular'), url('limelight-v7-woff2.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Michroma';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Michroma'), local('Michroma-Regular'), url('michroma-v7-woff2.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Prosto One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Prosto One'), local('ProstoOne-Regular'), url('prostoone-v5-woff2.woff2') format('woff2');
+}

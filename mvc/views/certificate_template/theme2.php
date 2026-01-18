@@ -21,12 +21,8 @@
 <section class="panel">
     <div class="panel-body bio-graph-info">
         <div id="printablediv" class="box-body">
-            <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> 
-            <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet"> 
-            <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">  
-            <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet"> 
-            <link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet"> 
+            <link href="<?=base_url('assets/vendor/google-fonts/fonts.css')?>" rel="stylesheet">
+ 
 
             <style type="text/css">
                 .mainTestimonial {

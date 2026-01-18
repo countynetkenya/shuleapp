@@ -238,7 +238,8 @@
     </div><!-- Body -->
 </div><!-- /.box -->
 
-<script src="https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag@latest/dist/main.js"></script>
+            <script src="<?=base_url('assets/vendor/country-list/country-list.js')?>"></script>
+
 <script type="text/javascript">
 $( ".select2" ).select2();
 $('#username').keyup(function() {

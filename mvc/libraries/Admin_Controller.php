@@ -35,10 +35,11 @@ class Admin_Controller extends MY_Controller {
         $this->load->library('form_validation');
         $this->load->model('classes_m');
         $this->load->model("menu_m");
-        $this->load->model("mailandsms_m");
-        $this->load->model("quickbookssettings_m");
+        //$this->load->model("mailandsms_m"); // Moved to lazy load
+        //$this->load->model("quickbookssettings_m"); // Moved to lazy load
         // SMS Libraries are now lazily loaded in allgetway_send_message and specific controllers
         // to improve performance.
+
         $this->lang->load('topbar_menu', $this->session->userdata('lang'));
 
         $module            = $this->uri->segment(1);
@@ -258,7 +259,8 @@ class Admin_Controller extends MY_Controller {
     }
 
     public function allgetway_send_message($getway, $to, $message, $mailandsmsID=NULL) {
-  		$result = [];
+  		$this->load->model('mailandsms_m');
+        $result = [];
   		if($getway == 'smsleopard') {
             $this->load->library("smsleopard", array('schoolID' => $this->session->userdata('schoolID')));
   			if($to) {
@@ -349,6 +351,7 @@ class Admin_Controller extends MY_Controller {
   	}
 
     public function get_delivery_report($mailandsms) {
+      $this->load->model('mailandsms_m');
       if($mailandsms->delivery_report == NULL) {
         if($mailandsms->sms_gateway == "smsleopard") {
             $this->load->library("smsleopard", array('schoolID' => $this->session->userdata('schoolID')));
@@ -1003,7 +1006,8 @@ class Admin_Controller extends MY_Controller {
 
     public function quickbooksConfig()
   	{
-  		$config = array();
+  		$this->load->model('quickbookssettings_m');
+        $config = array();
   		$get_quickbooks = $this->quickbookssettings_m->get_quickbooksetting_values(array('schoolID' => $this->session->userdata('schoolID')));
   		foreach ($get_quickbooks as $key => $value) {
   			$config[$value->field_names] = $value->field_values;

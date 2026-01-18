@@ -62,7 +62,8 @@
 
             <?php if(config_item('demo')) { ?>
                 <a href="https://codecanyon.net/item/inilabs-school-android-app-ionic-mobile-application/25780938" target="_blank">
-                    <img class="img-responsive" src="https://demo.inilabs.net/description/school/app/signin-banner-2.png" alt="inilabs school app banner">
+                    <!-- <img class="img-responsive" src="https://demo.inilabs.net/description/school/app/signin-banner-2.png" alt="inilabs school app banner"> -->
+
                 </a>
             <?php } ?>
         </div>

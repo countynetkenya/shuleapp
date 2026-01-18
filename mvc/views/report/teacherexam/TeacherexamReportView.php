@@ -52,10 +52,10 @@
 
 <div id="load_tabulationsheetreport"></div>
 
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/export-data.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="<?=base_url('assets/vendor/highcharts/highcharts.js')?>"></script>
+<script src="<?=base_url('assets/vendor/highcharts/modules/exporting.js')?>"></script>
+<script src="<?=base_url('assets/vendor/highcharts/modules/export-data.js')?>"></script>
+<script src="<?=base_url('assets/vendor/highcharts/modules/accessibility.js')?>"></script>
 <script type="text/javascript">
 
     function printDiv(divID) {
