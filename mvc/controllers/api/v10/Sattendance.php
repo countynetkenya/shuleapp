@@ -1301,11 +1301,13 @@ class Sattendance extends Api_Controller
 		$result = [];
 		if($getway == "clickatell") {
 			if($to) {
+                $this->load->library("clickatell");
 				$this->clickatell->send_message($to, $message);
 				$result['check'] = TRUE;
 				return $result;
 			}
 		} elseif($getway == 'twilio') {
+            $this->load->library("twilio");
 			$get = $this->twilio->get_twilio();
 			$from = $get['number'];
 			if($to) {

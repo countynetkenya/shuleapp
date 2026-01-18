@@ -37,12 +37,8 @@ class Admin_Controller extends MY_Controller {
         $this->load->model("menu_m");
         $this->load->model("mailandsms_m");
         $this->load->model("quickbookssettings_m");
-        $this->load->library("bongasms", array('schoolID' => $this->session->userdata('schoolID')));
-        $this->load->library("smsleopard", array('schoolID' => $this->session->userdata('schoolID')));
-    		$this->load->library("clickatell");
-    		$this->load->library("twilio");
-    		$this->load->library("bulk");
-    		$this->load->library("msg91");
+        // SMS Libraries are now lazily loaded in allgetway_send_message and specific controllers
+        // to improve performance.
         $this->lang->load('topbar_menu', $this->session->userdata('lang'));
 
         $module            = $this->uri->segment(1);
@@ -264,6 +260,7 @@ class Admin_Controller extends MY_Controller {
     public function allgetway_send_message($getway, $to, $message, $mailandsmsID=NULL) {
   		$result = [];
   		if($getway == 'smsleopard') {
+            $this->load->library("smsleopard", array('schoolID' => $this->session->userdata('schoolID')));
   			if($to) {
           $response = json_decode($this->smsleopard->send($to, $message));
   				if($response->success == TRUE)  {
@@ -288,6 +285,7 @@ class Admin_Controller extends MY_Controller {
   				}
   			}
   		} elseif($getway == 'bongasms') {
+            $this->load->library("bongasms", array('schoolID' => $this->session->userdata('schoolID')));
   			if($to) {
           $response = $this->bongasms->send($to, $message);
   				if($response->status == 222)  {
@@ -301,12 +299,14 @@ class Admin_Controller extends MY_Controller {
   				}
   			}
   		} elseif($getway == "clickatell") {
+            $this->load->library("clickatell");
   			if($to) {
   				$this->clickatell->send_message($to, $message);
   				$result['check'] = TRUE;
   				return $result;
   			}
   		} elseif($getway == 'twilio') {
+            $this->load->library("twilio");
   			$get = $this->twilio->get_twilio();
   			$from = $get['number'];
   			if($to) {
@@ -322,6 +322,7 @@ class Admin_Controller extends MY_Controller {
 
   			}
   		} elseif($getway == 'bulk') {
+            $this->load->library("bulk");
   			if($to) {
   				if($this->bulk->send($to, $message) == TRUE)  {
   					$result['check'] = TRUE;
@@ -333,6 +334,7 @@ class Admin_Controller extends MY_Controller {
   				}
   			}
   		} elseif($getway == 'msg91') {
+            $this->load->library("msg91");
   			if($to) {
   				if($this->msg91->send($to, $message) == TRUE)  {
   					$result['check'] = TRUE;
@@ -349,10 +351,12 @@ class Admin_Controller extends MY_Controller {
     public function get_delivery_report($mailandsms) {
       if($mailandsms->delivery_report == NULL) {
         if($mailandsms->sms_gateway == "smsleopard") {
+            $this->load->library("smsleopard", array('schoolID' => $this->session->userdata('schoolID')));
   		    $response = json_decode($this->smsleopard->delivery_report($mailandsms->message_uuid));
           $delivery_report = $response->status .";". $response->reason;
         }
         elseif($mailandsms->sms_gateway == "bongasms") {
+          $this->load->library("bongasms", array('schoolID' => $this->session->userdata('schoolID')));
           $response = $this->bongasms->delivery_report($mailandsms->message_uuid);
           if($response->status == "222") {
             $delivery_report = $response->delivery_status_desc .";". $response->status_message;

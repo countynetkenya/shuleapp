@@ -498,6 +498,7 @@ class Safaricom extends CI_Controller {
 		$this->load->library("msg91");
 
 		if($getway == 'smsleopard') {
+            $this->load->library("smsleopard", array('schoolID' => $this->session->userdata('schoolID')));
 			if($to) {
 				if($this->smsleopard->send($to, $message) == TRUE)  {
 					$result['check'] = TRUE;
@@ -509,12 +510,14 @@ class Safaricom extends CI_Controller {
 				}
 			}
 		} elseif($getway == "clickatell") {
+            $this->load->library("clickatell");
 			if($to) {
 				$this->clickatell->send_message($to, $message);
 				$result['check'] = TRUE;
 				return $result;
 			}
 		} elseif($getway == 'twilio') {
+            $this->load->library("twilio");
 			$get = $this->twilio->get_twilio();
 			$from = $get['number'];
 			if($to) {
@@ -530,6 +533,7 @@ class Safaricom extends CI_Controller {
 
 			}
 		} elseif($getway == 'bulk') {
+            $this->load->library("bulk");
 			if($to) {
 				if($this->bulk->send($to, $message) == TRUE)  {
 					$result['check'] = TRUE;
@@ -541,6 +545,7 @@ class Safaricom extends CI_Controller {
 				}
 			}
 		} elseif($getway == 'msg91') {
+            $this->load->library("msg91");
 			if($to) {
 				if($this->msg91->send($to, $message) == TRUE)  {
 					$result['check'] = TRUE;

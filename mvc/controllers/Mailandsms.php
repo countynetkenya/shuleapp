@@ -2230,6 +2230,7 @@ class Mailandsms extends Admin_Controller {
 				} elseif($getway == 'bongasms') {
           return true;
 				} elseif($getway == "clickatell") {
+                    $this->load->library("clickatell");
 					if($this->clickatell->ping() == TRUE) {
 						return TRUE;
 					} else {
@@ -2238,6 +2239,7 @@ class Mailandsms extends Admin_Controller {
 					}
 					return TRUE;
 				} elseif($getway == 'twilio') {
+                    $this->load->library("twilio");
 					$get = $this->twilio->get_twilio();
 					$ApiVersion = $get['version'];
 					$AccountSid = $get['accountSID'];
@@ -2249,6 +2251,7 @@ class Mailandsms extends Admin_Controller {
 					}
 					return TRUE;
 				} elseif($getway == 'bulk') {
+                    $this->load->library("bulk");
 					if($this->bulk->ping() == TRUE) {
 						return TRUE;
 					} else {
