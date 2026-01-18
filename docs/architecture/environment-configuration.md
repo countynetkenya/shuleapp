@@ -28,6 +28,8 @@ Guidelines
 - Avoid hardcoding domains in views, JS, or PHP — use `APP_URL` or runtime-detected host when needed.
 - Use `$_ENV`, `getenv()` or a small bootstrap that maps `.env` into `$_ENV`.
 - Keep `production` DB credentials out of repo; use `.env` or secret store.
+- When running behind a reverse proxy, ensure `HTTP_X_FORWARDED_PROTO` and `HTTP_X_FORWARDED_HOST` are passed so `base_url` resolves correctly.
+- Prefer setting `APP_URL` in production to avoid mismatched schemes/hosts after a domain move.
 
 Files to check
 
