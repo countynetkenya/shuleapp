@@ -23,12 +23,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-// Prefer APP_URL from environment for portability. Fallback to auto-detection for development.
+// Prefer APP_URL from environment for portability. Fallback to proxy-aware auto-detection.
 $env_app_url = getenv('APP_URL');
 if ($env_app_url !== false && $env_app_url !== '') {
     $config['base_url'] = rtrim($env_app_url, '/') . '/';
 } else {
-    $config['base_url'] = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost') . preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])) . '/';
+    $forwardedProto = $_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '';
+    $forwardedHost = $_SERVER['HTTP_X_FORWARDED_HOST'] ?? '';
+    $hostHeader = $_SERVER['HTTP_HOST'] ?? '';
+
+    if ($forwardedProto !== '') {
+        $forwardedProto = strtolower(trim(explode(',', $forwardedProto)[0]));
+    }
+    if ($forwardedHost !== '') {
+        $forwardedHost = trim(explode(',', $forwardedHost)[0]);
+    }
+
+    $scheme = ($forwardedProto !== '')
+        ? $forwardedProto
+        : (isset($_SERVER['HTTPS']) ? 'https' : 'http');
+    $host = ($forwardedHost !== '')
+        ? $forwardedHost
+        : ($hostHeader !== '' ? $hostHeader : 'localhost');
+
+    $config['base_url'] = $scheme . '://' . $host . preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])) . '/';
 }
 
 $config['base_path'] = $_SERVER['DOCUMENT_ROOT'] . preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])) . '/';
@@ -417,7 +435,12 @@ $config['sess_regenerate_destroy'] = FALSE;
 |
 */
 $config['cookie_prefix']	= '';
-$config['cookie_domain']	= getenv('COOKIE_DOMAIN') !== false ? getenv('COOKIE_DOMAIN') : '';
+$cookie_domain_env = getenv('COOKIE_DOMAIN');
+if ($cookie_domain_env !== false && $cookie_domain_env !== '') {
+    $config['cookie_domain'] = $cookie_domain_env;
+} else {
+    $config['cookie_domain'] = parse_url($config['base_url'], PHP_URL_HOST) ?: '';
+}
 $config['cookie_path']		= getenv('COOKIE_PATH') !== false ? getenv('COOKIE_PATH') : '/';
 $config['cookie_secure']	= (getenv('COOKIE_SECURE') !== false) ? (bool)filter_var(getenv('COOKIE_SECURE'), FILTER_VALIDATE_BOOLEAN) : FALSE;
 $config['cookie_httponly'] 	= (getenv('COOKIE_HTTPONLY') !== false) ? (bool)filter_var(getenv('COOKIE_HTTPONLY'), FILTER_VALIDATE_BOOLEAN) : FALSE;
