@@ -6,7 +6,6 @@ Define rules and expectations for AI agents working in this repository.
 
 Operating rules (short)
 
-- Always run `scripts/find-domain-lockins.sh` before editing files that may contain domains.
 - Make minimal, reversible changes. Prefer adding config-driven behavior over changing many files.
 - Update docs under `docs/` and create an ADR for non-trivial decisions in `docs/adr/`.
 - Write tests under `tests/` for any behavior you change.
