@@ -1,5 +1,16 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-require_once(APPPATH . '../vendor/autoload.php');
+
+if (file_exists(APPPATH . '../vendor/autoload.php')) {
+    require_once(APPPATH . '../vendor/autoload.php');
+} else {
+    // Fail gracefully if composer install hasn't been run
+    if (defined('ENVIRONMENT') && ENVIRONMENT === 'development') {
+        die("Error: vendor/autoload.php not found. Please run 'composer install' in the project root.");
+    } else {
+        show_error("System dependency missing. Please contact administrator.", 500);
+    }
+}
+
 use QuickBooksOnline\API\DataService\DataService;
 use QuickBooksOnline\API\Facades\Customer;
 
