@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Serve PHP",
+            "type": "shell",
+            "command": "php -S 0.0.0.0:8000 index.php",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Test Student Page",
+            "type": "shell",
+            "command": "php tests/test_student_autoload.php",
+            "group": "test"
+        }
+    ]
+}

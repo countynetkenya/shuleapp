@@ -565,7 +565,8 @@ $config['proxy_ips'] = '';
 $config['product_name'] = 'school_5_2';
 
 $config['installDomain'] = [
-    'https://demo.inilabs.net/tracker',
+    // Tracker URL removed for shuleapp
+    // 'https://demo.inilabs.net/tracker',
     'http://144.168.42.81/tracker',
     'http://demo.dipokhalder.com/tracker',
 ];

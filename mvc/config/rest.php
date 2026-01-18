@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['force_https'] = FALSE;
 
-$config['jwt_secret_key'] = 'inilabs';
+$config['jwt_secret_key'] = getenv('JWT_SECRET_KEY') ?: 'shuleapp_secret_key_default';
 
 $config['jwt_token_expire'] = '10';
 

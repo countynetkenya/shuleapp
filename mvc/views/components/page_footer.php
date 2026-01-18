@@ -1,6 +1,6 @@
         </div>
         <script type="text/javascript" src="<?php echo base_url('assets/bootstrap/bootstrap.min.js'); ?>"></script>
-        <script type="text/javascript" src="<?php echo base_url('assets/inilabs/style.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo base_url('assets/shuleapp/style.js'); ?>"></script>
         <script type="text/javascript" src="<?php echo base_url('assets/datatables/tools/jquery.dataTables.min.js'); ?>"></script>
         <script type="text/javascript" src="<?php echo base_url('assets/datatables/tools/dataTables.buttons.min.js'); ?>"></script>
         <script type="text/javascript" src="<?php echo base_url('assets/datatables/tools/jszip.min.js'); ?>"></script>
@@ -8,7 +8,7 @@
         <script type="text/javascript" src="<?php echo base_url('assets/datatables/tools/vfs_fonts.js'); ?>"></script>
         <script type="text/javascript" src="<?php echo base_url('assets/datatables/tools/buttons.html5.min.js'); ?>"></script>
         <script type="text/javascript" src="<?php echo base_url('assets/datatables/dataTables.bootstrap.js'); ?>"></script>
-        <script type="text/javascript" src="<?php echo base_url('assets/inilabs/inilabs.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo base_url('assets/shuleapp/inilabs.js'); ?>"></script>
         <script type="text/javascript">
           $(document).ready(function () {
             $(document).ajaxStart(function () {

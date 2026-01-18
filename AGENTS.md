@@ -1,23 +1,21 @@
-# AGENTS.md
+# AI Agent Workflow & Beta Branching
 
-Purpose
+## Branching Strategy
+- **main**: Stable, production-ready code.
+- **beta**: Integration branch for new features and testing. All PRs target `beta` first.
+- **feature/xxx**: Short-lived branches for specific tasks (deleted after merge).
 
-Define rules and expectations for AI agents working in this repository.
+## Error Tracking
+- Runtime errors are logged to `application/logs/` (or `log.txt` in root if configured).
+- Agents should `grep` these logs when debugging.
+- Known issues/bugs should be documented in `docs/BUGS.md`.
 
-Operating rules (short)
+## Portability Rules
+- **Configuration**: Use `getenv()` for all credentials and environment-specific paths.
+- **Database**: Do not hardcode connection details. Use `mvc/config/database.php` with ENV vars.
+- **Paths**: Use `FCPATH` or `APPPATH` constants, never absolute paths like `/var/www`.
 
-- Make minimal, reversible changes. Prefer adding config-driven behavior over changing many files.
-- Update docs under `docs/` and create an ADR for non-trivial decisions in `docs/adr/`.
-- Write tests under `tests/` for any behavior you change.
-- Never commit secrets. Use `.env` (ignored) or CI secret stores.
-
-Development flow
-
-1. Create or update a spec in `specs/` for the feature/bug.
-2. Run `scripts/generate-feature-index.sh` to update `docs/FEATURE_INDEX.md`.
-3. Make changes in `mvc/` or `main/` under `src/` mapping if planned.
-4. Add or update tests and run `phpunit` (if configured) or local manual checks.
-
-Agent contacts
-
-- Leave a short changelog in commit message with `AGENT:` prefix.
+## Performance
+- **Lazy Loading**: Use `$this->load->library()` only when needed, not in constructors.
+- **Assets**: Minify CSS/JS when deploying.
+- **Caching**: Utilize CodeIgniter's caching drivers where appropriate.

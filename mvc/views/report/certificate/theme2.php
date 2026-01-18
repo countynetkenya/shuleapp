@@ -2,7 +2,7 @@
 <html>
 <head>
     <title><?=$this->lang->line('report_certificate')?></title>
-    <script type="text/javascript" src="<?php echo base_url('assets/inilabs/jquery.min.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/shuleapp/jquery.min.js'); ?>"></script>
 
     <link rel="SHORTCUT ICON" href="<?=base_url("uploads/images/$siteinfos->photo")?>" />
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> 
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet"> 
     <link href="<?=base_url('assets/bootstrap/bootstrap.min.css')?>" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url('assets/inilabs/combined.css'); ?>" >
+    <link rel="stylesheet" href="<?php echo base_url('assets/shuleapp/combined.css'); ?>" >
 
     <?php
         if(isset($headerassets)) {

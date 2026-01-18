@@ -11,7 +11,7 @@
 
         <link rel="stylesheet" href="<?=base_url('assets/pace/pace.css')?>">
 
-        <script type="text/javascript" src="<?php echo base_url('assets/inilabs/jquery.min.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo base_url('assets/shuleapp/jquery.min.js'); ?>"></script>
         <!-- <script type="text/javascript" src="<?php echo base_url('assets/slimScroll/jquery.slimscroll.min.js'); ?>"></script> -->
 
         <script type="text/javascript" src="<?php echo base_url('assets/toastr/toastr.min.js'); ?>"></script>
@@ -29,21 +29,21 @@
 
         <link id="headStyleCSSLink" href="<?php echo base_url($backendThemePath.'/style.css?2112025'); ?>" rel="stylesheet">
 
-        <link href="<?php echo base_url('assets/inilabs/hidetable.css'); ?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/shuleapp/hidetable.css'); ?>" rel="stylesheet">
 
-        <link href="<?php echo base_url('assets/inilabs/inilabs.css'); ?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/shuleapp/inilabs.css'); ?>" rel="stylesheet">
 
         <link id="headInilabsCSSLink" href="<?php echo base_url($backendThemePath.'/inilabs.css'); ?>" rel="stylesheet">
 
-        <link href="<?php echo base_url('assets/inilabs/responsive.css'); ?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/shuleapp/responsive.css'); ?>" rel="stylesheet">
 
         <link href="<?php echo base_url('assets/toastr/toastr.min.css'); ?>" rel="stylesheet">
 
-        <link href="<?php echo base_url('assets/inilabs/mailandmedia.css'); ?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/shuleapp/mailandmedia.css'); ?>" rel="stylesheet">
 
         <link rel="stylesheet" href="<?php echo base_url('assets/datatables/buttons.dataTables.min.css'); ?>" >
 
-        <link rel="stylesheet" href="<?php echo base_url('assets/inilabs/combined.css'); ?>" >
+        <link rel="stylesheet" href="<?php echo base_url('assets/shuleapp/combined.css'); ?>" >
         <link rel="stylesheet" href="<?php echo base_url('assets/ajaxloder/ajaxloder.css'); ?>" >
 
         <?php

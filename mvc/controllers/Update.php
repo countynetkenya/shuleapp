@@ -68,7 +68,7 @@ class Update extends MY_Controller {
 
         $userTypeID              = $this->session->userdata('usertypeID');
         $this->_backendTheme     = strtolower($siteInfo->backend_theme);
-        $this->_backendThemePath = 'assets/inilabs/themes/' . strtolower($siteInfo->backend_theme);
+        $this->_backendThemePath = 'assets/shuleapp/themes/' . strtolower($siteInfo->backend_theme);
 
         $this->data["siteinfos"]         = $siteInfo;
         $this->data['backendTheme']      = $this->_backendTheme;

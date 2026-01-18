@@ -6,7 +6,7 @@
     <title>Installer</title>
     <link rel="SHORTCUT ICON" href="<?=base_url("uploads/images/site.png")?>" />
     <link href="<?php echo base_url('assets/bootstrap/bootstrap.min.css'); ?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets/inilabs/install.css'); ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/shuleapp/install.css'); ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/fonts/font-awesome.css'); ?>" rel="stylesheet">
     <style type="text/css">
         .text-aqua {
@@ -34,9 +34,9 @@
             <!-- </div> -->
         </div>
     </div>
-<script type="text/javascript" src="<?php echo base_url('assets/inilabs/jquery.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/shuleapp/jquery.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/bootstrap/bootstrap.min.js'); ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/inilabs/inilabs.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/shuleapp/inilabs.js'); ?>"></script>
 
 </body>
 </html>

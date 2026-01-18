@@ -1148,9 +1148,9 @@
     function callDesignCss()
     {
         $file  = file_get_contents(FCPATH . 'assets/bootstrap/bootstrap.min.css');
-        $file2 = file_get_contents(FCPATH . 'assets/inilabs/themes/default/style.css');
-        $file3 = file_get_contents(FCPATH . 'assets/inilabs/themes/default/inilabs.css');
-        $file4 = file_get_contents(FCPATH . 'assets/inilabs/combined.css');
+        $file2 = file_get_contents(FCPATH . 'assets/shuleapp/themes/default/style.css');
+        $file3 = file_get_contents(FCPATH . 'assets/shuleapp/themes/default/inilabs.css');
+        $file4 = file_get_contents(FCPATH . 'assets/shuleapp/combined.css');
         echo '<style type="text/css">' . $file . $file2 . $file3 . $file4 . '</style>';
     }
 

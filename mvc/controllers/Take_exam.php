@@ -70,12 +70,12 @@ Class Take_exam extends Admin_Controller {
         $this->data['headerassets'] = array(
             'css' => array(
                 'assets/checkbox/checkbox.css',
-                'assets/inilabs/form/fuelux.min.css'
+                'assets/shuleapp/form/fuelux.min.css'
             )
         );
         $this->data['footerassets'] = array(
             'js' => array(
-                'assets/inilabs/form/fuelux.min.js'
+                'assets/shuleapp/form/fuelux.min.js'
             )
         );
 

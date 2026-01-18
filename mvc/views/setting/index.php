@@ -792,8 +792,8 @@
                     data: "id=" + id,
                     dataType: "html",
                     success: function(data) {
-                        $('#headStyleCSSLink').attr('href', "<?=base_url('assets/inilabs/themes/')?>"+data+"/style.css");
-                        $('#headInilabsCSSLink').attr('href', "<?=base_url('assets/inilabs/themes/')?>"+data+"/inilabs.css");
+                        $('#headStyleCSSLink').attr('href', "<?=base_url('assets/shuleapp/themes/')?>"+data+"/style.css");
+                        $('#headInilabsCSSLink').attr('href', "<?=base_url('assets/shuleapp/themes/')?>"+data+"/inilabs.css");
 
                         $html = '<center class="backendThemeBodyMargin"><button type="button" class="btn btn-danger"><i  class="fa fa-check-circle"></i></button></center>';
                         $('.backendThemeBodyMargin').hide();
