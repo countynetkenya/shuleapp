@@ -795,7 +795,13 @@ if ( !defined('BASEPATH') ) {
 
         private function _versionChecking( $postDatas )
         {
+            // Performance Fix: Disabled external call to inilabs.net which causes timeouts
+            return (object) [
+                'status'  => true,
+                'version' => 'none'
+            ];
 
+            /*
             try
 			{
                 $result = [
@@ -838,6 +844,7 @@ if ( !defined('BASEPATH') ) {
                     'version' => 'none'
                 ];
 			}
+            */
         }
 
         public function update()

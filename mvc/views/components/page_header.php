@@ -17,7 +17,7 @@
         <script type="text/javascript" src="<?php echo base_url('assets/toastr/toastr.min.js'); ?>"></script>
 
 
-        <link href="<?php echo base_url('assets/bootstrap/bootstrap.min.css'); ?>" rel="stylesheet">
+        <link href="<?php echo base_url('assets/vendor/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
 
         <link href="<?php echo base_url('assets/fonts/font-awesome.css'); ?>" rel="stylesheet">
 

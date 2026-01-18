@@ -28,25 +28,11 @@ $env_app_url = getenv('APP_URL');
 if ($env_app_url !== false && $env_app_url !== '') {
     $config['base_url'] = rtrim($env_app_url, '/') . '/';
 } else {
-    $forwardedProto = $_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '';
-    $forwardedHost = $_SERVER['HTTP_X_FORWARDED_HOST'] ?? '';
-    $hostHeader = $_SERVER['HTTP_HOST'] ?? '';
-
-    if ($forwardedProto !== '') {
-        $forwardedProto = strtolower(trim(explode(',', $forwardedProto)[0]));
-    }
-    if ($forwardedHost !== '') {
-        $forwardedHost = trim(explode(',', $forwardedHost)[0]);
-    }
-
-    $scheme = ($forwardedProto !== '')
-        ? $forwardedProto
-        : (isset($_SERVER['HTTPS']) ? 'https' : 'http');
-    $host = ($forwardedHost !== '')
-        ? $forwardedHost
-        : ($hostHeader !== '' ? $hostHeader : 'localhost');
-
-    $config['base_url'] = $scheme . '://' . $host . preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])) . '/';
+    // Dynamically determine the base URL
+    // Use root-relative path '/' by default to avoid Mixed Content (HTTP vs HTTPS) issues behind proxies like Codespaces.
+    // If running in a subdirectory, detect it.
+    $path = dirname($_SERVER['SCRIPT_NAME']);
+    $config['base_url'] = rtrim($path, '/') . '/';
 }
 
 $config['base_path'] = $_SERVER['DOCUMENT_ROOT'] . preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])) . '/';

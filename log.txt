@@ -1,0 +1,562 @@
+[Sun Jan 18 14:31:11 2026] PHP 8.1.34 Development Server (http://0.0.0.0:8000) started
+[Sun Jan 18 14:31:32 2026] 127.0.0.1:48196 Accepted
+[Sun Jan 18 14:31:32 2026] 127.0.0.1:48196 [200]: GET /signin/index
+[Sun Jan 18 14:31:32 2026] 127.0.0.1:48196 Closing
+[Sun Jan 18 14:31:32 2026] 127.0.0.1:48212 Accepted
+[Sun Jan 18 14:31:32 2026] 127.0.0.1:48212 [303]: POST /signin/index
+[Sun Jan 18 14:31:32 2026] 127.0.0.1:48212 Closing
+[Sun Jan 18 14:31:32 2026] 127.0.0.1:48218 Accepted
+[Sun Jan 18 14:32:01 2026] 127.0.0.1:48218 [200]: GET /dashboard/index
+[Sun Jan 18 14:32:01 2026] 127.0.0.1:48218 Closing
+[Sun Jan 18 14:32:01 2026] 127.0.0.1:45430 Accepted
+[Sun Jan 18 14:32:43 2026] 127.0.0.1:45430 [200]: GET /dashboard/index
+[Sun Jan 18 14:32:43 2026] 127.0.0.1:45430 Closing
+[Sun Jan 18 14:32:43 2026] 127.0.0.1:60894 Accepted
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:60894 [200]: GET /dashboard/index
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:60894 Closing
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:37700 Accepted
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:37710 Accepted
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:37700 [307]: GET /signin/signout
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:37700 Closing
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:58324 Accepted
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:37710 [307]: GET /profile/index
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:37710 Closing
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:58332 Accepted
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:58324 [307]: GET /signin/cpassword
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:58324 Closing
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:58332 [404]: GET /frontend/index - No such file or directory
+[Sun Jan 18 14:33:14 2026] 127.0.0.1:58332 Closing
+[Sun Jan 18 14:38:39 2026] 127.0.0.1:40222 Accepted
+[Sun Jan 18 14:38:40 2026] 127.0.0.1:40222 [200]: GET /
+[Sun Jan 18 14:38:40 2026] 127.0.0.1:40222 Closing
+[Sun Jan 18 14:38:40 2026] 127.0.0.1:40250 Accepted
+[Sun Jan 18 14:38:40 2026] 127.0.0.1:40250 [200]: GET /frontend/default/assets/iniPlaylist/iniplaylist.css
+[Sun Jan 18 14:38:40 2026] 127.0.0.1:40250 Closing
+[Sun Jan 18 14:38:40 2026] 127.0.0.1:40266 Accepted
+[Sun Jan 18 14:38:40 2026] 127.0.0.1:40266 [200]: GET /frontend/default/assets/js/jquery.counterup.min.js
+[Sun Jan 18 14:38:40 2026] 127.0.0.1:40266 Closing
+[Sun Jan 18 14:38:41 2026] 127.0.0.1:40314 Accepted
+[Sun Jan 18 14:38:41 2026] 127.0.0.1:40314 [200]: GET /frontend/default/assets/css/animate.css
+[Sun Jan 18 14:38:41 2026] 127.0.0.1:40314 Closing
+[Sun Jan 18 14:38:41 2026] 127.0.0.1:40326 Accepted
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40326 [200]: GET /frontend/default/assets/css/style.css
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40326 Closing
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40332 Accepted
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40336 Accepted
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40336 [404]: GET /frontend/default/assets/js/vendor/jquery-1.12.0.min.js - No such file or directory
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40336 Closing
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40352 Accepted
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40362 Accepted
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40332 [200]: GET /frontend/default/assets/css/venobox.css
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40352 [200]: GET /frontend/default/assets/toastr/toastr.min.css
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40332 Closing
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40352 Closing
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40394 Accepted
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40362 [200]: GET /frontend/default/assets/js/smoothscroll.js
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40362 Closing
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40408 Accepted
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40422 Accepted
+[Sun Jan 18 14:38:42 2026] 127.0.0.1:40428 Accepted
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40440 Accepted
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40394 [200]: GET /frontend/default/assets/iniPlaylist/iniplaylist.js
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40394 Closing
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40408 [404]: GET /frontend/default/assets/js/vendor/modernizr-2.8.3.min.js - No such file or directory
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40408 Closing
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40422 [200]: GET /frontend/default/assets/css/responsive.css
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40422 Closing
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40478 Accepted
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40502 Accepted
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40428 [200]: GET /frontend/default/assets/css/slicknav.min.css
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40428 Closing
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40440 [200]: GET /frontend/default/assets/js/jquery.easing.1.3.js
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40440 Closing
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40516 Accepted
+[Sun Jan 18 14:38:43 2026] 127.0.0.1:40534 Accepted
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40562 Accepted
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40568 Accepted
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40582 Accepted
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40594 Accepted
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40608 Accepted
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40478 [200]: GET /frontend/default/assets/js/waypoints.min.js
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40478 Closing
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40502 [200]: GET /frontend/default/assets/js/main.js
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40502 Closing
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40516 [200]: GET /frontend/default/assets/js/owl.carousel.min.js
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40516 Closing
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40534 [200]: GET /frontend/default/assets/toastr/toastr.min.js
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40534 Closing
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40630 Accepted
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40562 [200]: GET /frontend/default/assets/js/jquery.slicknav.min.js
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40562 Closing
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40594 [200]: GET /frontend/default/assets/js/plugins.js
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40594 Closing
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40634 Accepted
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40568 [200]: GET /frontend/default/assets/js/venobox.min.js
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40568 Closing
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40582 [200]: GET /frontend/default/assets/css/font-awesome.min.css
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40582 Closing
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40608 [200]: GET /frontend/default/assets/js/bootstrap.min.js
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40608 Closing
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40630 [200]: GET /frontend/default/assets/css/bootstrap.min.css
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40630 Closing
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40634 [200]: GET /frontend/default/assets/css/owl.carousel.css
+[Sun Jan 18 14:38:44 2026] 127.0.0.1:40634 Closing
+[Sun Jan 18 14:38:45 2026] 127.0.0.1:39554 Accepted
+[Sun Jan 18 14:38:45 2026] 127.0.0.1:39554 [200]: GET /frontend/default/assets/fonts/fontawesome-webfont.woff2?v=4.5.0
+[Sun Jan 18 14:38:45 2026] 127.0.0.1:39554 Closing
+[Sun Jan 18 14:38:45 2026] 127.0.0.1:39564 Accepted
+[Sun Jan 18 14:38:45 2026] 127.0.0.1:39564 [404]: GET /uploads/images/
+[Sun Jan 18 14:38:45 2026] 127.0.0.1:39564 Closing
+[Sun Jan 18 14:38:48 2026] 127.0.0.1:39582 Accepted
+[Sun Jan 18 14:38:48 2026] 127.0.0.1:39582 [307]: GET /signin/index
+[Sun Jan 18 14:38:48 2026] 127.0.0.1:39582 Closing
+[Sun Jan 18 14:38:48 2026] 127.0.0.1:39592 Accepted
+[Sun Jan 18 14:39:10 2026] 127.0.0.1:39592 [200]: GET /dashboard/index
+[Sun Jan 18 14:39:10 2026] 127.0.0.1:39592 Closing
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57714 Accepted
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57714 [200]: GET /assets/shuleapp/inilabs.css
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57774 Accepted
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57714 Closing
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57844 Accepted
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57906 Accepted
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57906 [200]: GET /assets/fonts/icomoon.css
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57774 [200]: GET /assets/fullcalendar/fullcalendar.css
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57906 Closing
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57774 Closing
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57844 [200]: GET /assets/fullcalendar/lib/moment.min.js
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57844 Closing
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57922 Accepted
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57922 [200]: GET /assets/bootstrap/bootstrap.min.css
+[Sun Jan 18 14:39:11 2026] 127.0.0.1:57922 Closing
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57938 Accepted
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57938 [200]: GET /assets/select2/css/select2-bootstrap.css
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57938 Closing
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57944 Accepted
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57944 [200]: GET /assets/shuleapp/responsive.css
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57944 Closing
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57956 Accepted
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57956 [200]: GET /assets/shuleapp/themes/default/style.css?2112025
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57956 Closing
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57968 Accepted
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57968 [200]: GET /assets/shuleapp/combined.css
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57968 Closing
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57972 Accepted
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57972 [200]: GET /assets/datatables/buttons.dataTables.min.css
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:57972 Closing
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58012 Accepted
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58012 [200]: GET /assets/shuleapp/mailandmedia.css
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58012 Closing
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58028 Accepted
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58028 [404]: GET /uploads/language_image/english.png - No such file or directory
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58028 Closing
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58040 Accepted
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58040 [200]: GET /assets/select2/select2.js
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58040 Closing
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58044 Accepted
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58044 [200]: GET /assets/highcharts/highcharts.js
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58044 Closing
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58058 Accepted
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58058 [200]: GET /assets/highcharts/highcharts-more.js
+[Sun Jan 18 14:39:12 2026] 127.0.0.1:58058 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58092 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58092 [200]: GET /assets/fonts/ini-icon.css
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58092 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58106 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58106 [200]: GET /assets/datatables/dataTables.bootstrap.css
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58106 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58122 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58122 [200]: GET /assets/shuleapp/hidetable.css
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58122 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58134 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58134 [200]: GET /assets/ajaxloder/loader.gif
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58134 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58138 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58138 [200]: GET /assets/fullcalendar/fullcalendar.min.js
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58138 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58146 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58146 [200]: GET /assets/shuleapp/jquery.min.js
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58146 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58148 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58148 [200]: GET /assets/toastr/toastr.min.css
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58148 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58164 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58164 [200]: GET /assets/fonts/font-awesome.css
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58164 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58178 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58178 [200]: GET /assets/highcharts/drilldown.js
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58178 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58194 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58194 [200]: GET /assets/highcharts/data.js
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58194 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58212 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58212 [200]: GET /assets/select2/css/select2.css
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58212 Closing
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58226 Accepted
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58226 [200]: GET /assets/shuleapp/themes/default/inilabs.css
+[Sun Jan 18 14:39:13 2026] 127.0.0.1:58226 Closing
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58240 Accepted
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58240 [200]: GET /assets/pace/pace.css
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58240 Closing
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58252 Accepted
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58252 [200]: GET /assets/fullcalendar/lib/cupertino/jquery-ui.min.css
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58252 Closing
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58262 Accepted
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58262 [200]: GET /assets/fullcalendar/lib/jquery-ui.min.js
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58262 Closing
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58274 Accepted
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58274 [200]: GET /assets/toastr/toastr.min.js
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58274 Closing
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58284 Accepted
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58284 [200]: GET /assets/highcharts/exporting.js
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58284 Closing
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58288 Accepted
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58288 [200]: GET /assets/ajaxloder/ajaxloder.css
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58288 Closing
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58292 Accepted
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58292 [404]: GET /uploads/language_image/arabic.png - No such file or directory
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58292 Closing
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58302 Accepted
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58302 [200]: GET /assets/highcharts/highcharts-more.js
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58302 Closing
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58314 Accepted
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58314 [404]: GET /uploads/language_image/bengali.png - No such file or directory
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58314 Closing
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58326 Accepted
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58326 [200]: GET /assets/shuleapp/inilabs.css
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58326 Closing
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58346 Accepted
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58346 [404]: GET /uploads/language_image/chinese.png - No such file or directory
+[Sun Jan 18 14:39:14 2026] 127.0.0.1:58346 Closing
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59158 Accepted
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59158 [200]: GET /assets/bootstrap/bootstrap.min.js
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59158 Closing
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59186 Accepted
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59250 Accepted
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59186 [200]: GET /assets/datatables/tools/dataTables.buttons.min.js
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59186 Closing
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59320 Accepted
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59320 [404]: GET /uploads/language_image/german.png - No such file or directory
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59320 Closing
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59334 Accepted
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59250 [200]: GET /assets/datatables/tools/jquery.dataTables.min.js
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59334 [404]: GET /uploads/language_image/french.png - No such file or directory
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59250 Closing
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59334 Closing
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59370 Accepted
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59370 [200]: GET /assets/shuleapp/inilabs.js
+[Sun Jan 18 14:39:15 2026] 127.0.0.1:59370 Closing
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59406 Accepted
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59406 [200]: GET /assets/datatables/tools/vfs_fonts.js
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59438 Accepted
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59438 [200]: GET /assets/datatables/tools/jszip.min.js
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59406 Closing
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59438 Closing
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59446 Accepted
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59446 [200]: GET /assets/fonts/icomoon.ttf?wpuwy3
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59446 Closing
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59462 Accepted
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59462 [404]: GET /uploads/language_image/italian.png - No such file or directory
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59462 Closing
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59498 Accepted
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59498 [200]: GET /assets/fonts/fontawesome-webfont.woff2?v=4.4.0
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59498 Closing
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59506 Accepted
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59506 [404]: GET /uploads/language_image/thai.png - No such file or directory
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59506 Closing
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59512 Accepted
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59512 [200]: GET /assets/datatables/tools/buttons.html5.min.js
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59512 Closing
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59514 Accepted
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59514 [200]: GET /assets/select2/css/select2x2.png
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59514 Closing
+[Sun Jan 18 14:39:16 2026] 127.0.0.1:59526 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59526 [404]: GET /uploads/language_image/english.png - No such file or directory
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59526 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59536 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59536 [404]: GET /uploads/images/default.png - No such file or directory
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59536 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59550 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59550 [200]: GET /assets/shuleapp/style.js
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59550 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59564 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59564 [404]: GET /uploads/language_image/spanish.png - No such file or directory
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59564 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59580 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59580 [404]: GET /uploads/language_image/portuguese.png - No such file or directory
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59580 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59596 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59596 [200]: GET /assets/datatables/dataTables.bootstrap.js
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59596 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59610 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59610 [200]: GET /assets/pace/images/loader-64x/Preloader_3.gif
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59610 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59626 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59626 [404]: GET /uploads/language_image/hindi.png - No such file or directory
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59626 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59634 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59634 [404]: GET /uploads/language_image/turkish.png - No such file or directory
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59634 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59636 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59636 [200]: GET /assets/fonts/ini-icon.ttf?2rhnix
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59636 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59640 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59640 [404]: GET /uploads/language_image/romanian.png - No such file or directory
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59640 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59654 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59654 [404]: GET /uploads/language_image/indonesian.png - No such file or directory
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59654 Closing
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59668 Accepted
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59668 [404]: GET /uploads/language_image/german.png - No such file or directory
+[Sun Jan 18 14:39:17 2026] 127.0.0.1:59668 Closing
+[Sun Jan 18 14:39:18 2026] 127.0.0.1:59670 Accepted
+[Sun Jan 18 14:39:18 2026] 127.0.0.1:59670 [200]: GET /assets/fonts/glyphicons-halflings-regular.woff
+[Sun Jan 18 14:39:18 2026] 127.0.0.1:59670 Closing
+[Sun Jan 18 14:39:18 2026] 127.0.0.1:59678 Accepted
+[Sun Jan 18 14:39:18 2026] 127.0.0.1:59678 [404]: GET /uploads/language_image/russian.png - No such file or directory
+[Sun Jan 18 14:39:18 2026] 127.0.0.1:59678 Closing
+[Sun Jan 18 14:39:18 2026] 127.0.0.1:59686 Accepted
+[Sun Jan 18 14:39:18 2026] 127.0.0.1:59686 [200]: GET /assets/datatables/tools/pdfmake.min.js
+[Sun Jan 18 14:39:18 2026] 127.0.0.1:59686 Closing
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59730 Accepted
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59730 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59730 Closing
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59744 Accepted
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59744 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-icons_3d80b3_256x240.png
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59744 Closing
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59754 Accepted
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59754 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59754 Closing
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59770 Accepted
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59770 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-bg_glass_50_3baae3_1x400.png
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59770 Closing
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59784 Accepted
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59784 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59784 Closing
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59794 Accepted
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59794 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59794 Closing
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59802 Accepted
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59802 [404]: GET /uploads/images/e2ed0d1adc9d4bd119d0a5cff9ca5d0b103e920822f5706dd2a30650cc25bb18a1068cea03ce36c45aca8244af1c765c9136b582589defbb6885c303f35c5e82.jpg - No such file or directory
+[Sun Jan 18 14:39:19 2026] 127.0.0.1:59802 Closing
+[Sun Jan 18 14:39:28 2026] 127.0.0.1:33886 Accepted
+[Sun Jan 18 14:39:49 2026] 127.0.0.1:33886 [200]: GET /dashboard
+[Sun Jan 18 14:39:49 2026] 127.0.0.1:33886 Closing
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38610 Accepted
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38714 Accepted
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38728 Accepted
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38714 [200]: GET /assets/pace/pace.css
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38714 Closing
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38610 [200]: GET /assets/fullcalendar/lib/cupertino/jquery-ui.min.css
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38610 Closing
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38770 Accepted
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38770 [404]: GET /uploads/language_image/english.png - No such file or directory
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38770 Closing
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38782 Accepted
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38728 [200]: GET /assets/toastr/toastr.min.js
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38782 [200]: GET /assets/fullcalendar/lib/moment.min.js
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38728 Closing
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38782 Closing
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38786 Accepted
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38786 [200]: GET /assets/highcharts/highcharts-more.js
+[Sun Jan 18 14:39:50 2026] 127.0.0.1:38786 Closing
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38830 Accepted
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38830 [200]: GET /assets/fullcalendar/fullcalendar.css
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38830 Closing
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38842 Accepted
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38842 [200]: GET /assets/toastr/toastr.min.css
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38842 Closing
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38852 Accepted
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38852 [200]: GET /assets/shuleapp/themes/default/inilabs.css
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38852 Closing
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38884 Accepted
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38884 [200]: GET /assets/fullcalendar/lib/jquery-ui.min.js
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38884 Closing
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38894 Accepted
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38894 [200]: GET /assets/fonts/ini-icon.css
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38894 Closing
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38902 Accepted
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38902 [200]: GET /assets/select2/css/select2.css
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38902 Closing
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38910 Accepted
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38910 [200]: GET /assets/shuleapp/responsive.css
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38910 Closing
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38912 Accepted
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38912 [200]: GET /assets/shuleapp/themes/default/style.css?2112025
+[Sun Jan 18 14:39:51 2026] 127.0.0.1:38912 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38914 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38914 [200]: GET /assets/fullcalendar/fullcalendar.min.js
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38914 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38916 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38916 [200]: GET /assets/bootstrap/bootstrap.min.css
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38916 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38922 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38922 [200]: GET /assets/datatables/buttons.dataTables.min.css
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38922 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38930 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38930 [200]: GET /assets/fonts/font-awesome.css
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38930 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38942 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38942 [200]: GET /assets/shuleapp/inilabs.css
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38942 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38946 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38946 [200]: GET /assets/fonts/icomoon.css
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38946 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38952 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38952 [200]: GET /assets/datatables/dataTables.bootstrap.css
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38952 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38962 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38962 [200]: GET /assets/highcharts/drilldown.js
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38962 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38974 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38974 [200]: GET /assets/ajaxloder/loader.gif
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38974 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38990 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38990 [200]: GET /assets/highcharts/highcharts.js
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:38990 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:39000 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:39000 [200]: GET /assets/shuleapp/mailandmedia.css
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:39000 Closing
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:39016 Accepted
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:39016 [200]: GET /assets/shuleapp/hidetable.css
+[Sun Jan 18 14:39:52 2026] 127.0.0.1:39016 Closing
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39030 Accepted
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39030 [200]: GET /assets/shuleapp/combined.css
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39030 Closing
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39046 Accepted
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39046 [200]: GET /assets/select2/css/select2-bootstrap.css
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39046 Closing
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39056 Accepted
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39056 [200]: GET /assets/highcharts/data.js
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39056 Closing
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39066 Accepted
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39066 [200]: GET /assets/select2/select2.js
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39066 Closing
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39070 Accepted
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39070 [404]: GET /uploads/language_image/arabic.png - No such file or directory
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39070 Closing
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39072 Accepted
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39072 [200]: GET /assets/shuleapp/jquery.min.js
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39072 Closing
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39088 Accepted
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39088 [200]: GET /assets/ajaxloder/ajaxloder.css
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39088 Closing
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39102 Accepted
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39102 [200]: GET /assets/highcharts/exporting.js
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39102 Closing
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39118 Accepted
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39118 [404]: GET /uploads/language_image/bengali.png - No such file or directory
+[Sun Jan 18 14:39:53 2026] 127.0.0.1:39118 Closing
+[Sun Jan 18 14:39:54 2026] 127.0.0.1:39136 Accepted
+[Sun Jan 18 14:39:54 2026] 127.0.0.1:39136 [404]: GET /uploads/language_image/chinese.png - No such file or directory
+[Sun Jan 18 14:39:54 2026] 127.0.0.1:39136 Closing
+[Sun Jan 18 14:39:54 2026] 127.0.0.1:39292 Accepted
+[Sun Jan 18 14:39:54 2026] 127.0.0.1:39326 Accepted
+[Sun Jan 18 14:39:54 2026] 127.0.0.1:39292 [200]: GET /assets/datatables/tools/vfs_fonts.js
+[Sun Jan 18 14:39:54 2026] 127.0.0.1:39292 Closing
+[Sun Jan 18 14:39:54 2026] 127.0.0.1:39326 [200]: GET /assets/datatables/tools/jszip.min.js
+[Sun Jan 18 14:39:54 2026] 127.0.0.1:39326 Closing
+[Sun Jan 18 14:39:54 2026] 127.0.0.1:39376 Accepted
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:39406 Accepted
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:39376 [200]: GET /assets/datatables/tools/pdfmake.min.js
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:39376 Closing
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:39406 [404]: GET /uploads/language_image/spanish.png - No such file or directory
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:39406 Closing
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59834 Accepted
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59834 [200]: GET /assets/datatables/tools/dataTables.buttons.min.js
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59834 Closing
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59842 Accepted
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59842 [404]: GET /uploads/language_image/italian.png - No such file or directory
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59842 Closing
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59848 Accepted
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59848 [404]: GET /uploads/language_image/hindi.png - No such file or directory
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59848 Closing
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59856 Accepted
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59856 [200]: GET /assets/bootstrap/bootstrap.min.js
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59856 Closing
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59888 Accepted
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59888 [404]: GET /uploads/language_image/french.png - No such file or directory
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59888 Closing
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59890 Accepted
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59890 [200]: GET /assets/datatables/tools/jquery.dataTables.min.js
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59890 Closing
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59902 Accepted
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59902 [200]: GET /assets/datatables/dataTables.bootstrap.js
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59902 Closing
+[Sun Jan 18 14:39:55 2026] 127.0.0.1:59908 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59908 [404]: GET /uploads/language_image/english.png - No such file or directory
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59908 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59916 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59916 [404]: GET /uploads/language_image/portuguese.png - No such file or directory
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59916 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59920 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59920 [200]: GET /assets/shuleapp/inilabs.js
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59920 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59928 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59928 [404]: GET /uploads/language_image/romanian.png - No such file or directory
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59928 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59934 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59934 [200]: GET /assets/fonts/fontawesome-webfont.woff2?v=4.4.0
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59934 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59938 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59938 [200]: GET /assets/datatables/tools/buttons.html5.min.js
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59938 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59944 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59944 [404]: GET /uploads/language_image/indonesian.png - No such file or directory
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59944 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59960 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59960 [200]: GET /assets/pace/images/loader-64x/Preloader_3.gif
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59960 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59970 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59970 [404]: GET /uploads/language_image/turkish.png - No such file or directory
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59970 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59976 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59976 [200]: GET /assets/fonts/opensans-regular-webfont.woff2
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59976 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59978 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59978 [404]: GET /uploads/language_image/russian.png - No such file or directory
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59978 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59980 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59980 [200]: GET /assets/fonts/ini-icon.ttf?2rhnix
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59980 Closing
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59988 Accepted
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59988 [404]: GET /uploads/images/default.png - No such file or directory
+[Sun Jan 18 14:39:56 2026] 127.0.0.1:59988 Closing
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60004 Accepted
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60004 [200]: GET /assets/fonts/icomoon.ttf?wpuwy3
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60004 Closing
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60014 Accepted
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60014 [404]: GET /uploads/language_image/german.png - No such file or directory
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60014 Closing
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60022 Accepted
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60022 [404]: GET /uploads/language_image/thai.png - No such file or directory
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60022 Closing
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60036 Accepted
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60036 [200]: GET /assets/shuleapp/style.js
+[Sun Jan 18 14:39:57 2026] 127.0.0.1:60036 Closing
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60086 Accepted
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60086 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-icons_3d80b3_256x240.png
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60086 Closing
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60094 Accepted
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60094 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-bg_glass_50_3baae3_1x400.png
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60094 Closing
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60110 Accepted
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60110 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60110 Closing
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60112 Accepted
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60112 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60112 Closing
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60122 Accepted
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60122 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60122 Closing
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60132 Accepted
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60132 [404]: GET /uploads/images/e2ed0d1adc9d4bd119d0a5cff9ca5d0b103e920822f5706dd2a30650cc25bb18a1068cea03ce36c45aca8244af1c765c9136b582589defbb6885c303f35c5e82.jpg - No such file or directory
+[Sun Jan 18 14:39:58 2026] 127.0.0.1:60132 Closing
+[Sun Jan 18 14:39:59 2026] 127.0.0.1:60142 Accepted
+[Sun Jan 18 14:39:59 2026] 127.0.0.1:60142 [200]: GET /assets/fullcalendar/lib/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png
+[Sun Jan 18 14:39:59 2026] 127.0.0.1:60142 Closing
+[Sun Jan 18 14:40:03 2026] 127.0.0.1:60162 Accepted
+[Sun Jan 18 14:40:03 2026] 127.0.0.1:60162 [200]: GET /alert/alert
+[Sun Jan 18 14:40:03 2026] 127.0.0.1:60162 Closing
+[Sun Jan 18 14:42:43 2026] 127.0.0.1:60344 Accepted
+[Sun Jan 18 14:42:43 2026] 127.0.0.1:60344 [200]: HEAD /assets/bootstrap/bootstrap.min.css
+[Sun Jan 18 14:42:43 2026] 127.0.0.1:60344 Closing

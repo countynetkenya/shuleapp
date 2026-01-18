@@ -120,8 +120,8 @@
 
 <div id="load_productpurchasereport"></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+<script src="<?=base_url('assets/vendor/bootstrap-multiselect/js/bootstrap-multiselect.js')?>"></script>
+<link rel="stylesheet" href="<?=base_url('assets/vendor/bootstrap-multiselect/css/bootstrap-multiselect.css')?>">
 <script type="text/javascript">
 
     function printDiv(divID) {
