@@ -3,15 +3,15 @@
 class Install extends CI_Controller {
     /*
     | -----------------------------------------------------
-    | PRODUCT NAME: 	INILABS SCHOOL MANAGEMENT SYSTEM
+    | PRODUCT NAME: 	SHULEAPP SCHOOL MANAGEMENT SYSTEM
     | -----------------------------------------------------
-    | AUTHOR:			INILABS TEAM
+    | AUTHOR:			COUNTY NET KENYA
     | -----------------------------------------------------
-    | EMAIL:			info@inilabs.net
+    | EMAIL:			info@shuleapp.com
     | -----------------------------------------------------
-    | COPYRIGHT:		RESERVED BY INILABS IT
+    | COPYRIGHT:		RESERVED BY SHULEAPP
     | -----------------------------------------------------
-    | WEBSITE:			http://inilabs.net
+    | WEBSITE:			http://shuleapp.com
     | -----------------------------------------------------
     */
     protected $_info;
