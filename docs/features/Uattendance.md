@@ -20,7 +20,7 @@
 |--------|-------|---------|------------|
 | `index()` | `uattendance/index` | List users or redirect to own attendance | `uattendance_view` or self |
 | `add()` | `uattendance/add` | Mark attendance for specific date | `uattendance` |
-| `save_attendance()` | AJAX POST | Save user attendance data | `uattendance` |
+| `save_attendace()` | AJAX POST | Save user attendance data | `uattendance` |
 | `view()` | `uattendance/view/{userID}` | View user attendance history | `uattendance_view` or self |
 | `print_preview()` | `uattendance/print_preview/{userID}` | Generate PDF attendance report | `uattendance_view` or self |
 | `send_mail()` | AJAX POST | Email attendance report | `uattendance_view` or self |
