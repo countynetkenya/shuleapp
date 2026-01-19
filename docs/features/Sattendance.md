@@ -24,7 +24,7 @@
 |--------|-------|---------|------------|
 | `index()` | `sattendance/index/{classID}` | List students by class for attendance | `sattendance_view` or own class |
 | `add()` | `sattendance/add` | Mark attendance for a specific date | `sattendance` |
-| `save_attendace()` | AJAX POST | Save attendance data for students | `sattendance` |
+| `save_attendance()` | AJAX POST | Save attendance data for students | `sattendance` |
 | `view()` | `sattendance/view/{studentID}/{classID}` | View student attendance history | `sattendance_view` |
 | `print_preview()` | `sattendance/print_preview/{studentID}/{classID}` | Generate PDF attendance report | `sattendance_view` |
 | `send_mail()` | AJAX POST | Email attendance report | `sattendance_view` |

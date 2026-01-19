@@ -21,7 +21,7 @@
 |--------|-------|---------|------------|
 | `index()` | `tattendance/index` | List all teachers or redirect to own attendance | `tattendance_view` or self |
 | `add()` | `tattendance/add` | Mark attendance for specific date | `tattendance` |
-| `save_attendace()` | AJAX POST | Save teacher attendance data | `tattendance` |
+| `save_attendance()` | AJAX POST | Save teacher attendance data | `tattendance` |
 | `view()` | `tattendance/view/{teacherID}` | View teacher attendance history | `tattendance_view` or self |
 | `print_preview()` | `tattendance/print_preview/{teacherID}` | Generate PDF attendance report | `tattendance_view` or self |
 | `send_mail()` | AJAX POST | Email attendance report | `tattendance_view` or self |
