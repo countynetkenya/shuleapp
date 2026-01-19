@@ -105,7 +105,7 @@ php tests/test_student_autoload.php
 - **Always update** `docs/` when making significant changes
 - Create ADRs in `docs/adr/` for architectural decisions (use existing ADRs as templates)
 - Update or create feature docs in `docs/features/` for controller changes
-- Run `scripts/generate-feature-index.sh` to refresh `docs/FEATURE_INDEX.md` after adding features
+- Run `scripts/generate-feature-index.sh` to refresh `docs/FEATURE_INDEX.md` after adding or modifying features
 
 ### Documentation Style
 - Use clear, concise Markdown
