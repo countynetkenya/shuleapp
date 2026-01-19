@@ -163,7 +163,7 @@ php tests/test_student_autoload.php
 - **Main documentation**: See `docs/ARCHITECTURE.md` for system overview
 - **Agent guidelines**: See `AGENTS.md` for AI agent-specific rules
 - **ADRs**: Check `docs/adr/` for architectural decision history
-- **Feature catalog**: See `docs/FEATURE_CATALOG.md` and `docs/FEATURE_INDEX.md`
+- **Feature documentation**: See `docs/FEATURE_CATALOG.md` (human-friendly catalog with links) and `docs/FEATURE_INDEX.md` (auto-generated list)
 - **Runbooks**: See `docs/runbooks/` for deployment and operational guides
 
 ## Special Considerations
